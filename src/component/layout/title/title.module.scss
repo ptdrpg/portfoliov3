@@ -1,0 +1,19 @@
+.flex{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    color: white;
+}
+
+.line{
+    width: 200px;
+    height: 7px;
+    background-color: #EC60FC;
+}
+
+.bigTittle{
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}

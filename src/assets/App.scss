@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gurajada&family=Inter:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    background-color: #2B2B2B;
+    box-sizing: border-box;
+}
+ul li a{
+    color: white;
+}
+
+// .header{
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+// }
+
+.logo{
+    color: #53FC83;
+    font-size: 70px;
+    line-height: 0;
+    font-family: 'Gurajada', sans-serif;
+}
+
+.container{
+    padding: 100px 55px 50px 55px;
+}
+
+.headerAnimated{
+    height: 90vh;
+}
+
+.aboutSection{
+    padding: 60px 0;
+}
+
+.aboutProfile{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 10px 0;
+    padding: 50px 0;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.aboutTittle{
+    font-size: 45px;
+    font-weight: 500;
+    color: #53FC83;
+}
+
+.aboutFlex{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    color: white;
+    font-size: 25px;
+    grid-column: span 2;
+    
+}
+
+.label{
+    color: #FAA937;
+}
+
+.aboutGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3px;
+}
+
+.interest{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.interestCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    border: solid 2px #FAA937;
+    border-radius: 10px;
+    gap: 20px;
+    color: white;
+    font-size: 20px;
+    svg{
+        background: none;
+    }
+    div{
+        background: none;
+    }
+}
+
+.interestCard:hover{
+    // background-color: #53FC83;
+    svg{
+        color: white;
+    }
+}
+
+#interest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#skills{
+    justify-content: end;
+}
+
+.contactMe{
+    font-size: 30px;
+    color: #FAA937;
+}
+
+.skillsgrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    padding: 20px 0;
+}
+
+.skillColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.skillsLabel{
+    color: white;
+}
+
+#interest{
+    justify-content: start;
+}
+
+.interestBox{
+    padding: 30px 0;
+}
+
+.skillsBox{
+    padding: 30px 0;
+}
+
+.serviceTittle{
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+}
+
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}

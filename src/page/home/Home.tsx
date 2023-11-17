@@ -15,7 +15,7 @@ function Home() {
           </Canvas>
         </div>
       </section>
-      <section className='about'>
+      <section className='about' id="about">
         <About />
       </section>
     </>

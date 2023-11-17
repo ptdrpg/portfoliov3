@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Basket from '../../icon/Basket'
 import Music from '../../icon/Music'
 import Volley from '../../icon/Volley'
@@ -16,7 +16,7 @@ function Interest({}: Props) {
   return (
     <div className='aboutProfile'>
         {
-            interstItems.map((items)=> <LittleCard icone={items.icone} label={items.label} />)   
+            interstItems.map((items, idx)=> <LittleCard icone={items.icone} label={items.label} key={idx} />)   
         }      
     </div>
   )

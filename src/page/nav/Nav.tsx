@@ -1,5 +1,4 @@
 import Text from '../../component/text/Text'
-import { Link } from 'react-router-dom'
 import style from './nav.module.scss'
 import './nav.scss'
 
@@ -12,7 +11,7 @@ type linking = {
 }
 
 function Nav() {
-	const navItems: linking[] = [{ link: '', label: 'Home' }, { link: '/about', label: 'About' }, { link: '#myService', label: 'Service' }, { link: '', label: 'Contact' }];
+	const navItems: linking[] = [{ link: '', label: 'Home' }, { link: '#about', label: 'About' }, { link: '#myService', label: 'Service' }, { link: '#contact', label: 'Contact' }];
   return (
     <>
 		<nav className={style.nav}>
@@ -22,7 +21,7 @@ function Nav() {
 				<div className="link">
 					<ul className={style.navList}>
 						{
-							navItems.map((item, idx) => <li><Link to={item.link} key={idx}>{item.label}</Link></li>)
+							navItems.map((item, idx) => <li key={idx}><a href={item.link}>{item.label}</a></li>)
 						}
 					</ul>
 				</div>

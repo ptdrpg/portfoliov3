@@ -7,6 +7,7 @@ import SocialMedia from '../../component/icon/SocialMedia'
 import Skills from '../../component/layout/skills/Skills'
 import Interest from '../../component/layout/interst/Interest'
 import Service from '../service/Service'
+import Contact from '../contact/Contact'
 
 type Props = {}
 
@@ -87,6 +88,16 @@ function About({}: Props) {
 				<Service />
 			</div>
 		</section>
+		  <section className="contact" id='contact'>
+			<div className='contactWrappBox'>
+				<div className={style.flex}>
+      				<Text tag='p' children='CONTACT' />
+      				<div className={style.line}></div>
+				</div>  
+				<Text tag='p' children='CONTACT ME' classname='serviceTittle' />  
+			</div>
+        	<Contact />
+      	</section>
     </div>
   )
 }

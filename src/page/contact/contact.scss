@@ -1,0 +1,30 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.outline{
+    color: white;
+}
+
+.form-container{
+    padding: 0px 200px;
+}
+
+.variant{
+    display: flex;
+    padding: 3% 5%;
+    border: white solid 2px;
+    border-radius: 30px;
+    gap: 30px;
+    align-items: center;
+    color: white;
+}
+
+.contact-information{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1%;
+    padding: 3% 0;
+}

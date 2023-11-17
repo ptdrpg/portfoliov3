@@ -1,19 +1,8 @@
-import { OrbitControls, Stars  } from "@react-three/drei"
+import { Stars  } from "@react-three/drei"
 import { useRef } from "react"
 import { useFrame } from "@react-three/fiber"
-// import { Text } from "@react-three/drei"
-// import textureButton from '../../../image/Frame 50.jpg'
-// import * as THREE from 'three'
-// import { useNavigate } from "react-router-dom"
-
-// type Props = {
-//   setView: React.Dispatch<React.SetStateAction<boolean>>
-// }
-
-// const texture = new THREE.TextureLoader().load(textureButton);
 
 function HeaderThree() {
-  // const navigate = useNavigate();
   const star:any = useRef();
   const strasRef: any = useRef();
   const boxRef: any = useRef();
@@ -36,20 +25,9 @@ function HeaderThree() {
     star.current.rotation.y += 0.0005;
   })
 
-  // const enter = () => {
-  //   navigate('/about');
-  //   setView(true);
-  // }
     return (
     <>
-      {/* <OrbitControls /> */}
       <Stars ref={star} />
-      {/* <Text position={[0, 0.5, 0]} color={'#FAA937'} fontSize={0.5} >Welcome To my world</Text>
-      <mesh position={[0, -1, -1]} onClick={enter} >
-        <boxGeometry args={[2,1,1]} />
-        <meshBasicMaterial map={texture} />
-        </mesh> */}
-        {/* <primitive object={gltf.scene} /> */}
         <mesh position={[0,-0.5,0]}>
           <sphereGeometry args={[0.7,60,60]} />
           <meshNormalMaterial />  

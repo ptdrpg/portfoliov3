@@ -12,7 +12,7 @@ type linking = {
 }
 
 function Nav() {
-	const navItems: linking[] = [{ link: '', label: 'Home' }, { link: '/about', label: 'About' }, { link: '', label: 'Service' }, { link: '', label: 'Contact' }];
+	const navItems: linking[] = [{ link: '', label: 'Home' }, { link: '/about', label: 'About' }, { link: '#myService', label: 'Service' }, { link: '', label: 'Contact' }];
   return (
     <>
 		<nav className={style.nav}>

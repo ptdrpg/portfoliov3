@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import Title from '../../component/layout/title/Title'
 import pic from '../../image/profile.jpg'
 import Text from '../../component/text/Text'
@@ -6,6 +6,7 @@ import style from '../../component/layout/title/title.module.scss'
 import SocialMedia from '../../component/icon/SocialMedia'
 import Skills from '../../component/layout/skills/Skills'
 import Interest from '../../component/layout/interst/Interest'
+import Service from '../service/Service'
 
 type Props = {}
 
@@ -74,13 +75,16 @@ function About({}: Props) {
 			</div>
 			<Interest />
 		</div>
-		<section>
+		<section id='myService'>
 			<div className='service'>
 				<div className={style.flex}>
       				<div className={style.line}></div>
       				<Text tag='p' children='SERVICE' />
 				</div>  
 				<Text tag='p' children='MY SERVICE' classname='serviceTittle' />  
+			</div> 
+			<div className='serviceBox'>
+				<Service />
 			</div>
 		</section>
     </div>

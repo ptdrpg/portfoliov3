@@ -1,15 +1,10 @@
 import { Canvas } from "@react-three/fiber"
 import HeaderThree from "../../component/layout/3D/HeaderThree";
-// import { useLayoutEffect } from "react";
+import About from "../about/About";
 
-// type Props = {
-//   setView: React.Dispatch<React.SetStateAction<boolean>>
-// }
 
 function Home() {
-  // useLayoutEffect(() => {
-  //   setView(false);
-  // })
+
   return (
     <>
       <section className="header">
@@ -19,6 +14,9 @@ function Home() {
             <HeaderThree />
           </Canvas>
         </div>
+      </section>
+      <section className='about'>
+        <About />
       </section>
     </>
   )

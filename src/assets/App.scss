@@ -42,8 +42,7 @@ ul li a{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    padding: 10px 0;
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .flex{
@@ -126,6 +125,7 @@ ul li a{
 
 #skills{
     justify-content: end;
+    padding-top: 50px;
 }
 
 .contactMe{

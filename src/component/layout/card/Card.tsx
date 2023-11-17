@@ -1,18 +1,24 @@
-import React from 'react'
+import './Card.scss'
 import Text from '../../text/Text'
+import Button from '../../button/Button'
 
 type Props = {
-    children: string,
-    picture: string
+  children: string,
+  picture: string,
+  description: string
 }
 
-function Card({children, picture}: Props) {
+function Card({children, picture, description}: Props) {
   return (
     <div className='card'>
-        <div>
-          <img src={picture} alt="" />
-        </div>
-        <Text tag='p' children={children} />
+      <div>
+        <img src={picture} alt="" width='100%' />
+      </div>
+      <div className='cardDescription'>
+        <Text tag='p' children={children} classname='cardTittle' />
+        <Text tag='p' children={description} />
+        <Button children='go watch' classname='serviceButton' />
+      </div>
     </div>
   )
 }

@@ -1,12 +1,14 @@
 
 type Props = {
-    placeholder: string
+  placeholder: string,
+  name: string,
+  handle?: any
 }
 
-function Textarea({placeholder}: Props) {
+function Textarea({placeholder, name, handle}: Props) {
   return (
       <>
-        <textarea name="" id="" cols={30} rows={10} className="input" placeholder={placeholder}></textarea>
+        <textarea name={name} id="" cols={30} rows={10} className="input" placeholder={placeholder} onChange={handle} ></textarea>
       </>
   )
 }

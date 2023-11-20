@@ -1,13 +1,15 @@
 import './input.scss'
 
 type Props = {
-    placeholder: string
+  placeholder: string,
+  name: string,
+  change?: any
 }
 
-function Input({placeholder}: Props) {
+function Input({placeholder, name, change}: Props) {
   return (
     <>
-        <input type="text" className='input' placeholder={placeholder} />      
+      <input type="text" className='input' placeholder={placeholder} name={name} onChange={change} />      
     </>
   )
 }

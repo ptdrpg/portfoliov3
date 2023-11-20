@@ -6,10 +6,21 @@ import LittleCardVariant from '../../component/layout/littlecard/LittleCardVaria
 import Location from '../../component/icon/Location'
 import Phone from '../../component/icon/Phone'
 import Mail from '../../component/icon/Mail'
+import { useState } from 'react'
 
 type Props = {}
 
-function Contact({}: Props) {
+function Contact({ }: Props) {
+    const [user, setUser]:any = useState();
+    const handle = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      const {target} = e
+      const { name, value } = target
+      setUser({
+        ...user,
+        [name] : value
+      })
+        
+    }
   return (
     <>
         <div className="form-container">
@@ -21,20 +32,20 @@ function Contact({}: Props) {
             <div className="grmeid">
                 <div className="formGroup">
                     <label>Your name</label>
-                    <Input placeholder='Your name' />       
+                    <Input placeholder='Your name' name="name" change={handle} />       
                 </div>
                 <div className="formGroup">
                     <label>Your Email</label>
-                    <Input placeholder='Your Email' />       
+                    <Input placeholder='Your Email' name='email' change={handle} />       
                 </div>
             </div>
             <div className="formGroup">
                 <label>Subject</label>
-                <Input placeholder='Subject' />       
+                <Input placeholder='Subject' name='subject' change={handle} />       
             </div>
             <div className="formGroup">
                 <label>Subject</label>
-                <Textarea placeholder='Message' />    
+                <Textarea placeholder='Message' name='message' handle={handle} />    
             </div>
             <div className='ButtonBox'>
                 <Button children='Send' classname='serviceButton' />      

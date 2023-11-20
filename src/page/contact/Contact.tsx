@@ -7,6 +7,7 @@ import Location from '../../component/icon/Location'
 import Phone from '../../component/icon/Phone'
 import Mail from '../../component/icon/Mail'
 import { useState } from 'react'
+import axios from 'axios'
 
 type Props = {}
 
@@ -20,6 +21,17 @@ function Contact({ }: Props) {
         [name] : value
       })
         
+    }
+    const post = async () => {
+        try {
+            await axios.post("http://localhost:5000/contact", user, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+        } catch (error) {
+            
+        }
     }
   return (
     <>

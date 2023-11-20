@@ -24,13 +24,14 @@ function Contact({ }: Props) {
     }
     const post = async () => {
         try {
-            await axios.post("http://localhost:5000/contact", user, {
+            const postData = await axios.post("http://localhost:5000/contact", user, {
                 headers: {
                     'Content-Type': 'application/json'
                 }
             })
+            return postData;
         } catch (error) {
-            
+            console.error(error);
         }
     }
   return (
@@ -60,7 +61,7 @@ function Contact({ }: Props) {
                 <Textarea placeholder='Message' name='message' handle={handle} />    
             </div>
             <div className='ButtonBox'>
-                <Button children='Send' classname='serviceButton' />      
+                <Button children='Send' classname='serviceButton' handle={post} />      
             </div>
         </div>
     </>

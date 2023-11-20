@@ -1,13 +1,14 @@
 
 type Props = {
     children: string,
-    classname: string
+    classname: string,
+    handle?: any
 }
 
-const Button = ({children, classname}: Props) => {
+const Button = ({children, classname, handle}: Props) => {
   return (
       <>
-          <button className={classname} >{children}</button>
+          <button className={classname} onClick={handle} >{children}</button>
       </>
   )
 }

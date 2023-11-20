@@ -2,9 +2,6 @@ import Text from '../../component/text/Text'
 import style from './nav.module.scss'
 import './nav.scss'
 
-// type Props = {
-// 	view: boolean;
-// }
 type linking = {
 	link: string,
 	label: string
@@ -16,7 +13,7 @@ function Nav() {
     <>
 		<nav className={style.nav}>
 				<div>
-					<Text tag='h1' children='Pa' classname='logo' />
+					<Text tag='h2' children='Pa' classname='logo' />
 				</div>
 				<div className="link">
 					<ul className={style.navList}>

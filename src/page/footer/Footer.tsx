@@ -1,10 +1,13 @@
-import React from 'react'
+import Text from "../../component/text/Text"
 
-type Props = {}
 
-const Footer = (props: Props) => {
+const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+      <div>
+        <Text tag='h2' children="Andry Pagiela" classname="footerInitial" />
+      </div>
+    </footer>
   )
 }
 

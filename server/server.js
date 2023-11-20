@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import nodemailer from 'nodemailer'
-import bcrypt from 'bcryptjs'
+// import bcrypt from 'bcryptjs'
 
 const router = express.Router();
 const app = express();
@@ -18,20 +18,21 @@ app.listen(5000, () => console.log("server running on port 5000"));
 //     }
 // });
 
+const contactEmail = nodemailer.createTransport({
+service: "gmail",
+auth: {
+    user: 'andrypagielamizael@gmail.com',
+    pass: 'pagiela1^&*',
+},
+});
+
 router.post("/contact", (req, res) => {
     const name = req.body.name;
     const email = req.body.email;
     const subject = req.body.subject;
     const message = req.body.message;
-    const password = req.body.password;
-    const hashed = bcrypt.hash(password);
-    const contactEmail = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-        user: email,
-        pass: hashed,
-    },
-    });
+    // const password = req.body.password;
+    // const hashed = bcrypt.hash(password);
     const mail = {
         from: email,
         to: "pagielamizael@gmail.com",
@@ -42,7 +43,7 @@ router.post("/contact", (req, res) => {
         `
     };
     contactEmail.sendMail(mail, (error) => {
-        if (error) {
+        if (!error) {
             res.json({ status: "error" });
         } else {
             res.json({ status: "Messsage sent" });

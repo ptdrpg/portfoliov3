@@ -11,7 +11,7 @@ function LittleCardVariant({icone, label, desc}: Props) {
     <div className='variant'>
         {icone}
         <div className="contactTextitems">
-            <Text tag='h2' children={label} />
+            <Text tag='h2' children={label} classname="contactTittle" />
             <Text tag='p' children={desc} />
         </div>
     </div>

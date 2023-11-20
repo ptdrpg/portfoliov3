@@ -1,10 +1,13 @@
 .card{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    img{
+        object-fit: cover;
+    }
 }
 
 .cardDescription{
-    padding: 100px;
+    height: 100vh;
     background-color: #53FC83;
     display: flex;
     flex-direction: column;
@@ -19,5 +22,22 @@
         font-size: 50px;
         font-weight: 600;
         color: #2B2B2B;
+    }
+}
+
+@media (max-width:768px){
+    .card{
+        img{
+            object-fit: cover;
+        }
+    }
+    .cardDescription{
+        padding: 0;
+        .cardTittle{
+            font-size: 20px;
+        }
+        p{
+            font-size: 15px;
+        }
     }
 }

@@ -18,7 +18,7 @@ function Contact({}: Props) {
                 <LittleCardVariant icone={<Phone />} label='PHONE' desc='032 77 910 53' />
                 <LittleCardVariant icone={<Mail />} label='EMAIL' desc='pagielamizael@gmail.com' />
             </div>
-            <div className="grid">
+            <div className="grmeid">
                 <div className="formGroup">
                     <label>Your name</label>
                     <Input placeholder='Your name' />       

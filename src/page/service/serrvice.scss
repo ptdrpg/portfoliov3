@@ -60,3 +60,11 @@ SwiperSlide{
 .contactWrappBox{
     padding: 2% 0;
 }
+
+@media(max-width: 768px){
+    .serviceButton{
+        font-size: 15px;
+        padding: 10px 30px;
+
+    }
+}

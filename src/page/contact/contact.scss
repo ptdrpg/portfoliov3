@@ -9,7 +9,7 @@
 }
 
 .form-container{
-    padding: 0px 200px;
+    padding: 0px 10%;
 }
 
 .variant{
@@ -31,4 +31,15 @@
 
 .contactTittle{
     color: #FAA937;
+}
+
+@media (max-width: 768px){
+    .contact-information{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .variant{
+        padding: 5px;
+    }
 }

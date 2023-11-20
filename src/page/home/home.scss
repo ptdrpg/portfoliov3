@@ -5,11 +5,6 @@
     justify-content: center;
     padding: 15%;
     gap: 5%;
-    h1{
-        font-size: 70px;
-        font-weight: 600;
-        color: white;
-    }
     h2{
         font-size: 50px;
         font-weight: 500;
@@ -18,5 +13,26 @@
     p{
         color: white;
         font-size: 20px;
+    }
+}
+h1{
+    font-size: 70px;
+    font-weight: 600;
+    color: white;
+}
+
+
+@media(max-width:768px){
+    h1{
+        font-size: 40px;
+    }
+    .textBox{
+        gap: 20px;
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 20px;
+        }
     }
 }

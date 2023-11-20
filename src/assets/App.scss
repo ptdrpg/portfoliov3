@@ -26,6 +26,10 @@ ul li a{
     padding: 5% 10%;
 }
 
+.textBox {
+    position: relative;
+}
+
 .headerAnimated{
     height: 90vh;
 }
@@ -46,6 +50,8 @@ ul li a{
     grid-template-columns: repeat(2, 1fr);
     border-bottom: solid 1px lightblue;
 }
+
+
 
 .flex{
     display: flex;
@@ -175,4 +181,60 @@ ul li a{
     flex-direction: column;
     align-items: end;
     justify-content: center;
+}
+
+@media(max-width:768px) {
+    .container{
+        background: none;
+    }
+    .header{
+        display: block;
+    }
+    .textBox{
+        position: relative;
+        background: none;
+    }
+    .headerAnimated{
+        display: none;
+    }
+    .aboutProfile {
+        padding: 2%;
+        grid-template-columns: repeat(2, 1fr);
+        z-index: 1;
+    }
+    .skillsBox{
+        padding: 0;
+    }
+    .aboutFlex{
+        gap: 10px;
+        p{
+            font-size: 15px;
+        }
+        span{
+            font-size: 15px;
+        }
+        label{
+            font-size: 15px;
+        }
+        .aboutTittle{
+            font-size: 30px;
+        }
+    }
+    .socialMedia{
+        svg{
+            width: 150px;
+        }
+    }
+    #skills {
+        padding-top: 10px;
+    }
+    .skillsgrid{
+        gap: 2%;
+        label{
+            font-size: 10px;
+        }
+    }
+    .serviceTittle{
+        font-size: 25px;
+    }
 }

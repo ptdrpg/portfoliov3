@@ -24,3 +24,17 @@ footer{
 svg{
     background: none;
 }
+
+@media(max-width:768px){
+    .footerInitial{
+        font-size: 30px;
+    }
+    .footerDescription{
+        font-size: 15px;
+    }
+    footer{
+        svg{
+            width: 150px;
+        }
+    }
+}

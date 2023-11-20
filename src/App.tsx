@@ -5,6 +5,7 @@ import Nav from "./page/nav/Nav";
 import './assets/App.scss'
 import About from "./page/about/About";
 import Footer from "./page/footer/Footer";
+import './assets/responsive.css'
 
 function App() {
 	// const [view, setView] = useState(true);

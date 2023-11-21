@@ -27,7 +27,7 @@ svg{
 
 @media(max-width:768px){
     .footerInitial{
-        font-size: 30px;
+        font-size: 25px;
     }
     .footerDescription{
         font-size: 15px;
@@ -36,5 +36,20 @@ svg{
         svg{
             width: 150px;
         }
+    }
+    .footercontainer{
+        padding: 5% 0 0 0;
+    }
+}
+
+@media(max-width: 425px){
+    footer{
+        gap: 5px;
+    }
+    .footerInitial{
+        font-size: 20px;
+    }
+    .footerDescription{
+        font-size: 10px;
     }
 }

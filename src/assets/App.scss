@@ -42,7 +42,7 @@ ul li a{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    padding: 100px 0;
+    padding: 5% 0;
 }
 
 .header{
@@ -96,7 +96,7 @@ ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 0px;
+    padding: 5% 0px;
     border: solid 2px #FAA937;
     border-radius: 10px;
     gap: 20px;
@@ -236,5 +236,25 @@ ul li a{
     }
     .serviceTittle{
         font-size: 25px;
+    }
+    .interestCard{
+        font-size: 17px;
+        svg{
+            width: 50px;
+        }
+    }
+}
+
+@media(max-width: 425px){
+    .interestCard{
+        padding: 0% 2%;
+    }
+    .aboutProfile{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .container{
+        padding: 0;
     }
 }

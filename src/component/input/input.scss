@@ -17,3 +17,18 @@
     gap: 10px;
     padding: 10px 0;
 }
+
+@media(max-width: 768px){
+    .input{
+        font-size: 15px;
+    }
+    .formGroup {
+        gap: 5px;
+    }
+}
+
+@media(max-width: 425px) {
+    .input {
+        font-size: 10px;
+    }
+}

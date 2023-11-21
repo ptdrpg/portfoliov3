@@ -7,3 +7,26 @@
         font-size: 15px;
     }
 }
+
+._bigTittle_1weck_15 {
+    font-size: 60px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 55px;
+}
+
+@media(max-width: 425px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+    ._bigTittle_1weck_15 {
+        font-size: 30px;
+    }
+}

@@ -11,7 +11,7 @@ function Nav() {
 	const navItems: linking[] = [{ link: '', label: 'Home' }, { link: '#about', label: 'About' }, { link: '#myService', label: 'Service' }, { link: '#contact', label: 'Contact' }];
   return (
     <>
-		<nav className={style.nav}>
+		<nav className='nav'>
 				<div>
 					<Text tag='h2' children='Pa' classname='logo' />
 				</div>

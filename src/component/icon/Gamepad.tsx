@@ -1,8 +1,6 @@
-import React from 'react'
 
-type Props = {}
 
-function Gamepad({}: Props) {
+function Gamepad() {
   return (
     <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clipPath="url(#clip0_9_476)">

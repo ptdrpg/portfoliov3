@@ -20,6 +20,9 @@
     gap: 30px;
     align-items: center;
     color: white;
+    p{
+        font-size: 13px;
+    }
 }
 
 .contact-information{
@@ -31,6 +34,7 @@
 
 .contactTittle{
     color: #FAA937;
+    font-size: 17px;
 }
 
 @media (max-width: 768px){

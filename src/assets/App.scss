@@ -42,7 +42,7 @@ ul li a{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    padding: 5% 0;
+    padding: 1% 0;
 }
 
 .header{
@@ -61,7 +61,7 @@ ul li a{
 }
 
 .aboutTittle{
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 500;
     color: #53FC83;
 }
@@ -84,10 +84,10 @@ ul li a{
     grid-template-columns: repeat(2, 1fr);
     gap: 3px;
     span{
-        font-size: 20px;
+        font-size: 15px;
     }
     label{
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 
@@ -109,9 +109,11 @@ ul li a{
     font-size: 20px;
     svg{
         background: none;
+        width: 50px;
     }
     div{
         background: none;
+        font-size: 13px;
     }
 }
 
@@ -134,15 +136,18 @@ ul li a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    svg{
+        width: 200px;
+    }
 }
 
 #skills{
     justify-content: end;
-    padding-top: 50px;
+    padding-top: 1%;
 }
 
 .contactMe{
-    font-size: 30px;
+    font-size: 20px;
     color: #FAA937;
 }
 
@@ -176,7 +181,7 @@ ul li a{
 }
 
 .serviceTittle{
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 600;
     color: white;
 }
@@ -189,11 +194,11 @@ ul li a{
 }
 
 .aboutdescri{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .aboutIntro{
-    font-size: 20px;
+    font-size: 15px;
 }
 
 @media(max-width:768px) {

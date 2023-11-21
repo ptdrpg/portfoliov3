@@ -61,7 +61,7 @@ ul li a{
 }
 
 .aboutTittle{
-    font-size: 45px;
+    font-size: 35px;
     font-weight: 500;
     color: #53FC83;
 }
@@ -73,7 +73,9 @@ ul li a{
     color: white;
     font-size: 25px;
     grid-column: span 2;
-    
+    p{
+        font-size: 20px;
+    }
 }
 
 .label{

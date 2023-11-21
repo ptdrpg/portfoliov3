@@ -73,9 +73,6 @@ ul li a{
     color: white;
     font-size: 25px;
     grid-column: span 2;
-    p{
-        font-size: 20px;
-    }
 }
 
 .label{
@@ -86,6 +83,12 @@ ul li a{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3px;
+    span{
+        font-size: 20px;
+    }
+    label{
+        font-size: 20px;
+    }
 }
 
 .interest{
@@ -185,6 +188,14 @@ ul li a{
     justify-content: center;
 }
 
+.aboutdescri{
+    font-size: 20px;
+}
+
+.aboutIntro{
+    font-size: 20px;
+}
+
 @media(max-width:768px) {
     .container{
         background: none;
@@ -244,6 +255,12 @@ ul li a{
         svg{
             width: 50px;
         }
+    }
+    .aboutdescri {
+        font-size: 15px;
+    }
+    .aboutIntro {
+        font-size: 15px;
     }
 }
 

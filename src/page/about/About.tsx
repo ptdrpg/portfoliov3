@@ -20,7 +20,7 @@ function About({}: Props) {
 			<div><img src={pic} alt="" width='100%'/></div>
 			<div className='aboutFlex'>
 				<Text tag='p' children='Front-end developper' classname='aboutTittle' />
-				<div>
+				<div className='aboutIntro'>
 					<Text tag='p' children='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'/>
 				</div>
 				<div className='aboutGrid'>
@@ -53,7 +53,7 @@ function About({}: Props) {
 						</div>
 					</div>
 				</div>
-				<div>
+				<div className='aboutdescri'>
 					<Text tag='p' children='Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores' />
 				</div>
 			  	<div className="socialMedia">

@@ -1,4 +1,4 @@
-import React, { ElementType } from 'react'
+import { ElementType } from 'react'
 
 type Props = {
     tag: ElementType,

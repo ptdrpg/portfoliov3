@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { LinearProgress } from '@mui/material';
 
 type Props = {}
@@ -7,18 +6,18 @@ type Props = {}
 
 
 function Skills({}: Props) {
-	const [progress, setProgress] = useState(0);
+	// const [progress, setProgress] = useState(0);
 	const [html, setHtml] = useState(0);
 	const [css, setCss] = useState(0);
 	const [js, setJs] = useState(0);
 	const [figma, setFigma] = useState(0);
-	const [reactjs, setReact] = useState(0);
+	// const [reactjs, setReact] = useState(0);
 	const [gsap, setGsap] = useState(0);
 	const [sass, setSass] = useState(0);
-	const timer = setInterval(() => {
-		setProgress((oldProgress) => {
-			return Math.min(oldProgress + 1, 50);
-		});
+	setInterval(() => {
+		// setProgress((oldProgress) => {
+		// 	return Math.min(oldProgress + 1, 50);
+		// });
 		setSass((oldProgress) => {
 			return Math.min(oldProgress + 1, 70);
 		});
@@ -34,9 +33,9 @@ function Skills({}: Props) {
 		setFigma((oldProgress) => {
 			return Math.min(oldProgress + 1, 60);
 		});
-		setReact((oldProgress) => {
-			return Math.min(oldProgress + 1, 50);
-		});
+		// setReact((oldProgress) => {
+		// 	return Math.min(oldProgress + 1, 50);
+		// });
 		setGsap((oldProgress) => {
 			return Math.min(oldProgress + 1, 30);
 		});

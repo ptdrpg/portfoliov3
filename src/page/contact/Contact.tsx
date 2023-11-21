@@ -9,9 +9,8 @@ import Mail from '../../component/icon/Mail'
 import { useState } from 'react'
 import axios from 'axios'
 
-type Props = {}
 
-function Contact({ }: Props) {
+function Contact() {
     const [user, setUser]:any = useState();
     const handle = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
       const {target} = e
@@ -22,9 +21,17 @@ function Contact({ }: Props) {
       })
         
     }
+    const data = {
+        service_id: 'service_47jsjjg',
+        template_id: 'template_fi7g4rg',
+        user_id: 'ZUNVVit05oNz8rgwz',
+        template_params: {
+            ...user
+        }
+    }
     const post = async () => {
         try {
-            const postData = await axios.post("http://localhost:5000/contact", user, {
+            const postData = await axios.post("https://api.emailjs.com/api/v1.0/email/send", data, {
                 headers: {
                     'Content-Type': 'application/json'
                 }
@@ -33,6 +40,16 @@ function Contact({ }: Props) {
         } catch (error) {
             console.error(error);
         }
+        // try {
+        //     const postData = await axios.post("http://localhost:5000/contact", user, {
+        //         headers: {
+        //             'Content-Type': 'application/json'
+        //         }
+        //     })
+        //     return postData;
+        // } catch (error) {
+        //     console.error(error);
+        // }
     }
   return (
     <>

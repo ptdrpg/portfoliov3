@@ -36,20 +36,15 @@ function Contact() {
                     'Content-Type': 'application/json'
                 }
             })
+            if (postData) {
+                alert('message posted')
+            } else {
+                alert('errore');
+            }
             return postData;
         } catch (error) {
             console.error(error);
         }
-        // try {
-        //     const postData = await axios.post("http://localhost:5000/contact", user, {
-        //         headers: {
-        //             'Content-Type': 'application/json'
-        //         }
-        //     })
-        //     return postData;
-        // } catch (error) {
-        //     console.error(error);
-        // }
     }
   return (
     <>

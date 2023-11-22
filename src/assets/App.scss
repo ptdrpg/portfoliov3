@@ -270,9 +270,6 @@ ul li a{
 }
 
 @media(max-width: 425px){
-    .container{
-        padding-top: 5%;
-    }
     .interestCard{
         padding: 0% 2%;
     }
@@ -282,7 +279,7 @@ ul li a{
         gap: 2vh;
     }
     .container{
-        padding: 0;
+        padding: 7% 0;
     }
     .aboutFlex {
         gap: 10px;

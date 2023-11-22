@@ -203,7 +203,7 @@ ul li a{
 
 @media(max-width:768px) {
     .container{
-        background: 1%;
+        background: none;
     }
     .header{
         display: block;
@@ -270,6 +270,9 @@ ul li a{
 }
 
 @media(max-width: 425px){
+    .container{
+        padding-top: 5%;
+    }
     .interestCard{
         padding: 0% 2%;
     }

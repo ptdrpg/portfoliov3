@@ -20,7 +20,7 @@ function SocialMedia() {
   return (
     <div className={style.flex}>
       {
-        reseau.map((Element) => <button className={style.button} ><a href={Element.link}>{Element.label}</a></button> )
+        reseau.map((Element) => <a href={Element.link}>{Element.label}</a> )
       }
     </div>
   )

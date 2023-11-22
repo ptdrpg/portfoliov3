@@ -281,4 +281,16 @@ ul li a{
     .container{
         padding: 0;
     }
+    .aboutFlex {
+        gap: 10px;
+        p {
+            font-size: 10px;
+        }
+        span {
+            font-size: 10px;
+        }
+        label {
+            font-size: 10px;
+        }
+    }
 }

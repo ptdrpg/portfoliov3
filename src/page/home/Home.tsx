@@ -10,11 +10,11 @@ import gsap from "gsap";
 
 function Home() {
   useEffect(() => {
-    gsap.fromTo(".bigTittle", { x: -700 }, { x: 0, duration: 2 });
-    gsap.fromTo(".subtittle", { x: -500 }, { x: 0, duration: 2, delay: 1 });
-    gsap.fromTo(".headerDescription", { x: -600 }, { x: 0, duration: 2, delay: 2 });
-    gsap.fromTo(".serviceButton", { opacity:0 }, { opacity: 1, duration: 2, delay: 4 });
-    gsap.fromTo(".headerAnimated", { opacity:0 }, { opacity: 1, duration: 2, delay: 4 });
+    gsap.fromTo(".bigTittle", { x: -700 }, { x: 0, duration: 1 });
+    gsap.fromTo(".subtittle", { x: -500 }, { x: 0, duration: 1, delay: 1 });
+    gsap.fromTo(".headerDescription", { x: -600 }, { x: 0, duration: 1, delay: 2 });
+    gsap.fromTo(".serviceButton", { opacity:0 }, { opacity: 1, duration: 1, delay: 4 });
+    gsap.fromTo(".headerAnimated", { opacity:0 }, { opacity: 1, duration: 1, delay: 4 });
     gsap.fromTo(".nav", { y:-500 }, { y: 0, duration: 1, delay: 4 });
   })
   return (

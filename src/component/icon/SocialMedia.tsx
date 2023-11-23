@@ -1,13 +1,13 @@
-import style from './social.module.scss'
+
 
 type Props = {}
 
 function SocialMedia({}: Props) {
   return (
     <svg width="250" height="70" viewBox="0 0 250 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <a href="" className={style.link} ><g clipPath="url(#clip0_9_198)">
+<g clipPath="url(#clip0_9_198)">
 <path d="M24.5833 30.8333V39.1667H30.8333V53.75H39.1667V39.1667H45.4167L47.5 30.8333H39.1667V26.6667C39.1667 26.1141 39.3862 25.5842 39.7769 25.1935C40.1676 24.8028 40.6975 24.5833 41.25 24.5833H47.5V16.25H41.25C38.4873 16.25 35.8378 17.3475 33.8843 19.301C31.9308 21.2545 30.8333 23.904 30.8333 26.6667V30.8333H24.5833Z" stroke="#53FC83" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round"/>
-</g></a>
+</g>
 <g clipPath="url(#clip1_9_198)">
 <path d="M78.3333 26.6667C78.3333 24.4565 79.2113 22.3369 80.7741 20.7741C82.3369 19.2113 84.4565 18.3333 86.6667 18.3333H103.333C105.543 18.3333 107.663 19.2113 109.226 20.7741C110.789 22.3369 111.667 24.4565 111.667 26.6667V43.3333C111.667 45.5435 110.789 47.6631 109.226 49.2259C107.663 50.7887 105.543 51.6667 103.333 51.6667H86.6667C84.4565 51.6667 82.3369 50.7887 80.7741 49.2259C79.2113 47.6631 78.3333 45.5435 78.3333 43.3333V26.6667Z" stroke="#53FC83" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M88.75 35C88.75 36.6576 89.4085 38.2473 90.5806 39.4194C91.7527 40.5915 93.3424 41.25 95 41.25C96.6576 41.25 98.2473 40.5915 99.4194 39.4194C100.592 38.2473 101.25 36.6576 101.25 35C101.25 33.3424 100.592 31.7527 99.4194 30.5806C98.2473 29.4085 96.6576 28.75 95 28.75C93.3424 28.75 91.7527 29.4085 90.5806 30.5806C89.4085 31.7527 88.75 33.3424 88.75 35Z" stroke="#53FC83" strokeWidth="2.75" strokeLinecap="round" strokeLinejoin="round"/>
@@ -25,7 +25,7 @@ function SocialMedia({}: Props) {
 </g>
 <defs>
 <clipPath id="clip0_9_198">
-<rect width="50" height="50" fill="white" transform="translate(10 10)" />
+<rect width="50" height="50" fill="white" transform="translate(10 10)"/>
 </clipPath>
 <clipPath id="clip1_9_198">
 <rect width="50" height="50" fill="white" transform="translate(70 10)"/>

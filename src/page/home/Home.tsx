@@ -10,12 +10,12 @@ import gsap from "gsap";
 
 function Home() {
   useEffect(() => {
-    gsap.fromTo(".bigTittle", { x: -700 }, { x: 0, duration: 0.5 });
-    gsap.fromTo(".subtittle", { x: -500 }, { x: 0, duration: 0.5, delay: 1 });
-    gsap.fromTo(".headerDescription", { x: -600 }, { x: 0, duration: 0.5, delay: 2 });
-    gsap.fromTo(".serviceButton", { opacity:0 }, { opacity: 1, duration: 1, delay: 4 });
-    gsap.fromTo(".headerAnimated", { opacity:0 }, { opacity: 1, duration: 1, delay: 4 });
-    gsap.fromTo(".nav", { y:-500 }, { y: 0, duration: 1, delay: 4 });
+    gsap.fromTo(".bigTittle", { x: -700 }, { x: 0, duration: 0.4 });
+    gsap.fromTo(".subtittle", { x: -500 }, { x: 0, duration: 0.5, delay: 0.3 });
+    gsap.fromTo(".headerDescription", { x: -600 }, { x: 0, duration: 0.2, delay: 1 });
+    gsap.fromTo(".serviceButton", { opacity:0 }, { opacity: 1, duration: 1, delay: 1.5 });
+    gsap.fromTo(".headerAnimated", { opacity:0 }, { opacity: 1, duration: 1, delay: 2.5 });
+    gsap.fromTo(".nav", { y:-500 }, { y: 0, duration: 1, delay: 1 });
   })
   return (
     <>

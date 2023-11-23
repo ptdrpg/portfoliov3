@@ -4,18 +4,27 @@ import About from "../about/About";
 import Text from "../../component/text/Text";
 import './home.scss'
 import Button from "../../component/button/Button";
+import { useEffect } from "react";
+import gsap from "gsap";
 
 
 function Home() {
-
+  useEffect(() => {
+    gsap.fromTo(".bigTittle", { x: -700 }, { x: 0, duration: 2 });
+    gsap.fromTo(".subtittle", { x: -500 }, { x: 0, duration: 2, delay: 1 });
+    gsap.fromTo(".headerDescription", { x: -600 }, { x: 0, duration: 2, delay: 2 });
+    gsap.fromTo(".serviceButton", { opacity:0 }, { opacity: 1, duration: 2, delay: 4 });
+    gsap.fromTo(".headerAnimated", { opacity:0 }, { opacity: 1, duration: 2, delay: 4 });
+    gsap.fromTo(".nav", { y:-50 }, { y: 0, duration: 1, delay: 4 });
+  })
   return (
     <>
       <section className="header">
         <div className="textBox">
-          <Text tag='h1' children="I'm Andry Pagiela" classname="tittle" />
+          <Text tag='h1' children="I'm Andry Pagiela" classname="tittle bigTittle" />
           <div>
-            <Text tag='h2' children="I'm FRONT-END Developper" classname="tittle" />
-            <Text tag='p' children="Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prê"/>
+            <Text tag='h2' children="I'm FRONT-END Developper" classname="tittle subtittle" />
+            <Text tag='p' children="Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prê" classname="headerDescription"/>
           </div>
           <div className="headersbutton">
             <Button children='Contact me' classname='serviceButton' />

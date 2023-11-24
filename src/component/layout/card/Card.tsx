@@ -11,7 +11,7 @@ type Props = {
 function Card({children, picture, description}: Props) {
   return (
     <div className='card'>
-      <div>
+      <div className='cardImage'>
         <img src={picture} alt="" width='100%' />
       </div>
       <div className='cardDescription'>

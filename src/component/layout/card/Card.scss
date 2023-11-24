@@ -28,6 +28,7 @@
 @media (max-width:768px){
     .card{
         img{
+            width: 100%;
             object-fit: cover;
         }
     }
@@ -37,7 +38,20 @@
             font-size: 20px;
         }
         p{
-            font-size: 15px;
+            font-size: 10px;
         }
+    }
+}
+
+@media (max-width: 320px){
+    .card{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0;
+    }
+    .cardDescription{
+        justify-content: start;
+        gap: 10px;
+        padding-top: 10%;
     }
 }

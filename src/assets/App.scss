@@ -43,6 +43,7 @@ ul li a{
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 1% 0;
+    opacity: 0;
 }
 
 .header{
@@ -136,8 +137,9 @@ ul li a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    svg{
-        width: 200px;
+    a{
+        background: none;
+        color: white;
     }
 }
 

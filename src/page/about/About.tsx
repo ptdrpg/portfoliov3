@@ -3,16 +3,33 @@ import Title from '../../component/layout/title/Title'
 import pic from '../../image/profile.jpg'
 import Text from '../../component/text/Text'
 import style from '../../component/layout/title/title.module.scss'
-import SocialMedia from '../../component/icon/SocialMedia'
 import Skills from '../../component/layout/skills/Skills'
 import Interest from '../../component/layout/interst/Interest'
 import Service from '../service/Service'
 import Contact from '../contact/Contact'
+// import { useEffect } from 'react'
+// import gsap from 'gsap'
+// import ScrollTrigger from 'gsap/src/ScrollTrigger'
+// import down from '../../image/zavatra.pdf'
 
 type Props = {}
 
 
-function About({}: Props) {
+function About({ }: Props) {
+	// useEffect(() => {
+	// 	gsap.registerPlugin(ScrollTrigger);
+	// 	gsap.to(".aboutProfile", {
+	// 		scrollTrigger: {
+	// 			trigger: ".aboutProfile",
+	// 			start: "top buttom",
+	// 			end: 'end	 buttom',
+	// 			toggleActions: "restart none reverse none"
+	// 		},
+	// 		opacity: 1,
+	// 		// x: 0,
+	// 		duration: 2
+	// 	})
+	// })
   return (
     <div className='container'>
       <Title children='ABOUT' id='about' tittleChildren='LEARN MORE ABOUT ME' />
@@ -57,8 +74,7 @@ function About({}: Props) {
 					<Text tag='p' children='Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores' />
 				</div>
 			  	<div className="socialMedia">
-				  <Text tag='p' children='Contact me' classname='contactMe' /> 
-				 	<SocialMedia />
+				  <a href={down} download="cv" target='_blank'><button className='serviceButton'>Download cv</button></a>
 				</div>
 			</div>
 		</div>

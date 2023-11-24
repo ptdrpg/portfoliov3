@@ -10,7 +10,7 @@ import Contact from '../contact/Contact'
 // import { useEffect } from 'react'
 // import gsap from 'gsap'
 // import ScrollTrigger from 'gsap/src/ScrollTrigger'
-// import down from '../../image/zavatra.pdf'
+import down from '../../image/zavatra.pdf'
 
 type Props = {}
 

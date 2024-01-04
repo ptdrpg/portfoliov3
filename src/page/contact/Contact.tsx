@@ -1,17 +1,17 @@
 import './contact.scss'
-import Input from '../../component/input/Input'
-import Textarea from '../../component/input/Textarea'
-import Button from '../../component/button/Button'
 import LittleCardVariant from '../../component/layout/littlecard/LittleCardVariant'
 import Location from '../../component/icon/Location'
 import Phone from '../../component/icon/Phone'
 import Mail from '../../component/icon/Mail'
 import { useState } from 'react'
 import axios from 'axios'
+import ContactDialog from './ContactDialog'
+import Button from '../../component/button/Button'
 
 
-function Contact() {
-    const [user, setUser]:any = useState();
+function   Contact() {
+    const [user, setUser]: any = useState();
+    const [contact, setContact] = useState<boolean>(false)
     const handle = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
       const {target} = e
       const { name, value } = target
@@ -37,7 +37,7 @@ function Contact() {
                 }
             })
             if (postData) {
-                alert('message posted')
+                setContact(false);
             } else {
                 alert('errore');
             }
@@ -53,29 +53,14 @@ function Contact() {
                 <LittleCardVariant icone={<Location />} label='MY ADRESS' desc='Lot IIJ60ID Ivandry' />
                 <LittleCardVariant icone={<Phone />} label='PHONE' desc='032 77 910 53' />
                 <LittleCardVariant icone={<Mail />} label='EMAIL' desc='pagielamizael@gmail.com' />
-            </div>
-            <div className="grmeid">
-                <div className="formGroup">
-                    <label>Your name</label>
-                    <Input placeholder='Your name' name="name" change={handle} />       
-                </div>
-                <div className="formGroup">
-                    <label>Your Email</label>
-                    <Input placeholder='Your Email' name='email' change={handle} />       
-                </div>
-            </div>
-            <div className="formGroup">
-                <label>Subject</label>
-                <Input placeholder='Subject' name='subject' change={handle} />       
-            </div>
-            <div className="formGroup">
-                <label>Subject</label>
-                <Textarea placeholder='Message' name='message' handle={handle} />    
-            </div>
-            <div className='ButtonBox'>
-                <Button children='Send' classname='serviceButton' handle={post} />      
-            </div>
-        </div>
+              </div>
+              <div className='contactButton'>
+                <Button children='CONTACT ME' classname='serviceButton' handle={()=> setContact(true)}/>
+              </div>
+            {
+                  contact && <ContactDialog isOpen={contact} action={post} handle={handle} close={()=> setContact(false)} />     
+            }
+          </div>
     </>
   )
 }

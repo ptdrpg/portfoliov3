@@ -7,8 +7,9 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Inter', sans-serif;
-    background-color: #2B2B2B;
+    // background-color: #2B2B2B;
     box-sizing: border-box;
+    color: black;
 }
 ul li a{
     color: white;
@@ -50,6 +51,7 @@ ul li a{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border-bottom: solid 1px lightblue;
+    background-color: #2B2B2B;
 }
 
 
@@ -164,10 +166,6 @@ ul li a{
     display: flex;
     flex-direction: column;
     gap: 30px;
-}
-
-.skillsLabel{
-    color: white;
 }
 
 #interest{

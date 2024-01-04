@@ -15,11 +15,11 @@
 .variant{
     display: flex;
     padding: 3% 5%;
-    border: white solid 2px;
+    border: #53FC83 solid 2px;
     border-radius: 30px;
     gap: 30px;
     align-items: center;
-    color: white;
+    // color: white;
     p{
         font-size: 13px;
     }
@@ -48,6 +48,39 @@
     }
 }
 
+.contactButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+}
+
+.userInfo{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.dialogue_tittle{
+    text-align: center;
+}
+
+.dialogue{
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Dialogbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 @media(max-width: 425px){
     .variant{
         display: flex;
@@ -57,6 +90,9 @@
         svg{
             width: 40px;
         }
+    }
+    .userInfo{
+        display: contents;
     }
     .contactTextitems{
         display: flex;

@@ -2,6 +2,10 @@
     text-decoration: underline 3px #53FC83;
 }
 
+.link ul li a{
+    color: black;
+}
+
 @media(max-width:768px){
     .link ul li{
         font-size: 15px;

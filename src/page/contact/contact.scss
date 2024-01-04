@@ -37,6 +37,13 @@
     font-size: 17px;
 }
 
+.loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+}
+
 @media (max-width: 768px){
     .contact-information{
         display: flex;

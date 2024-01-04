@@ -11,7 +11,8 @@ import Button from '../../component/button/Button'
 
 function   Contact() {
     const [user, setUser]: any = useState();
-    const [contact, setContact] = useState<boolean>(false)
+    const [contact, setContact] = useState<boolean>(false);
+    const [loading, setloading] = useState<boolean>(false)
     const handle = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
       const {target} = e
       const { name, value } = target
@@ -30,6 +31,7 @@ function   Contact() {
         }
     }
     const post = async () => {
+        setloading(true)
         try {
             const postData = await axios.post("https://api.emailjs.com/api/v1.0/email/send", data, {
                 headers: {
@@ -37,6 +39,7 @@ function   Contact() {
                 }
             })
             if (postData) {
+                setloading(false)
                 setContact(false);
             } else {
                 alert('errore');
@@ -58,7 +61,7 @@ function   Contact() {
                 <Button children='CONTACT ME' classname='serviceButton' handle={()=> setContact(true)}/>
               </div>
             {
-                  contact && <ContactDialog isOpen={contact} action={post} handle={handle} close={()=> setContact(false)} />     
+                  contact && <ContactDialog isOpen={contact} action={post} handle={handle} close={()=> setContact(false)} loading={loading} />     
             }
           </div>
     </>
